@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.dropdown {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.Header {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/EG-en-20250106-TRIFECTA-perspective_9b6f8a60-df96-427e-abc5-7b91a702f73b_large.jpg");
+  height: 350px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.Header h1 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.default-ltr-cache-1f97ztc {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+
+.default-ltr-cache-1f97ztc:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin-top: -0.25rem;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+}
+
+.MovieCard {
+  text-decoration: none;
+}
+
+.movies-carousel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.movie-card {
+  max-width: 220px;
+  text-align: start;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.movie-info h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+
+.movie-info p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.details-card {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/EG-en-20250106-TRIFECTA-perspective_9b6f8a60-df96-427e-abc5-7b91a702f73b_large.jpg");
+  height: 350px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.container-background {
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.container-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(31, 31, 31, 1) calc((50vw - 170px) - 340px),
+    rgba(31, 31, 31, 0.84) 50%,
+    rgba(31, 31, 31, 0.84) 100%
+  );
+  z-index: 1;
+}
+
+.movie-content {
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.movie-details-container {
+  display: flex;
+  gap: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.movie-poster-details img {
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #1c1c1c;
+}
+
+.movie-details {
+  flex: 1;
+}
+
+.movie-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-title span {
+  color: #aaaaaa;
+}
+
+.movie-meta {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+.movie-overview-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.movie-overview {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.movie-tagline {
+  font-size: 1.1rem;
+  color: #d2d0d0;
+  margin-bottom: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-container {
+  width: 40%;
+  max-width: 90%;
+  z-index: 999;
+}
+.form-control {
+  background: rgba(71, 70, 71, 0.5);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%;
+  }
+
+  .movie-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-poster-details img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .movie-details {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .movie-title {
+    font-size: 1.5rem;
+  }
+
+  .movie-meta {
+    font-size: 0.9rem;
+  }
+
+  .movie-overview-title {
+    font-size: 1.1rem;
+  }
+
+  .movie-overview {
+    font-size: 0.9rem;
+  }
+
+  .movie-votes {
+    font-size: 0.9rem;
+  }
+
+  .movie-tagline {
+    font-size: 0.9rem;
+  }
+}
+
+.movies-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.movie-card {
+  flex: 1 1 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-info {
+  height: 80px;
+  padding-left: 5px;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+}
+
+.discover-section,
+.popular-section {
+  margin: 20px 0;
+}
+
+.discover-section h2,
+.popular-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
